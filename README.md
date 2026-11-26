@@ -22,6 +22,19 @@
 
 **LightDecision-1** predicts probabilities over candidate choices supplied with each request. It supports text and image inputs, action selection, binary judgments, and rubric scoring without generating an answer token by token. This repository provides the inference runtime, Python interface, and [HTTP service](#http-service) for both released models.
 
+## ✨ Highlights
+
+<p align="center">
+  <img src="assets/highlights.svg" width="100%" alt="Open-vocabulary decisions accept candidate choices in natural language. Multimodal requests support text and images. The model returns a probability for each candidate and scores choices directly with zero generated tokens." />
+</p>
+
+## 🤗 Model Zoo
+
+<p align="center">
+  <a href="https://huggingface.co/shenjunhao/lightdecision-1-4b"><img src="assets/model-card-4b.svg" width="49%" alt="LightDecision-1-4B model weights, 9.2 GB, on Hugging Face" /></a>
+  <a href="https://huggingface.co/shenjunhao/lightdecision-1-27b"><img src="assets/model-card-27b.svg" width="49%" alt="LightDecision-1-27B model weights, 52.3 GB, on Hugging Face" /></a>
+</p>
+
 ## Installation
 
 Use Python 3.11 or later and a CUDA-enabled PyTorch installation with BF16 support. Install the appropriate PyTorch build for your CUDA environment first, then:

@@ -1,0 +1,11 @@
+{
+  "model": "lightdecision-1",
+  "state": "Inspect the supplied image.",
+  "questions": {
+    "object": {
+      "type": "choice",
+      "instructions": "Which object is visible?",
+      "criteria": {"A mug": null, "A book": null, "A chair": null}
+    }
+  }
+}

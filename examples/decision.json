@@ -1,0 +1,15 @@
+{
+  "model": "lightdecision-1",
+  "state": "A robot is holding an empty mug next to a sink. The goal is to fill the mug with water.",
+  "questions": {
+    "action": {
+      "type": "choice",
+      "instructions": "Select the next useful action.",
+      "criteria": {
+        "Place the mug under the tap": "Position it so water can flow into it.",
+        "Open the refrigerator": "Look inside the refrigerator.",
+        "Put the mug in a drawer": "Store the mug away."
+      }
+    }
+  }
+}

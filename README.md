@@ -2,7 +2,7 @@
   <img src="assets/lightdecision-1.svg" width="540" alt="LightDecision-1" />
 </p>
 
-<p align="center"><strong>Text &amp; Vision Decision Models</strong><br />Choose · Judge · Score</p>
+<p align="center"><strong>An Open-Vocabulary Probabilistic Multimodal Decision Model</strong></p>
 
 <p align="center">
   <a href="https://huggingface.co/shenjunhao/lightdecision-1-4b"><img src="assets/model-4b.svg" alt="Hugging Face · 4B Weights" /></a>

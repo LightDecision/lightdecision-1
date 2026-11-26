@@ -22,7 +22,7 @@ lightdecision doctor
 
 The released checkpoints use BF16 backbone computation and an FP32 decision head. The runtime pins Transformers and Flash Linear Attention to the versions required by its cache and kernel interfaces. Weight files occupy approximately 9.2 GB for 4B and 52.3 GB for 27B; GPU memory must also accommodate image processing, activations, and caches.
 
-Both checkpoints have been checked with Python 3.12, PyTorch 2.11.0 (CUDA 12.9), Transformers 5.12.1, and `fla-core==0.5.2` on an NVIDIA H200, including text decisions, shared image inputs, candidate images, and HTTP requests.
+Both checkpoints have been checked with Python 3.12, PyTorch 2.11.0 (CUDA 12.9), Transformers 5.12.1, and `fla-core==0.5.2`, including text decisions, shared image inputs, candidate images, and HTTP requests.
 
 ## Run a decision
 

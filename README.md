@@ -1,39 +1,21 @@
-<p align="center">
-  <img src="assets/lightdecision-1.svg" width="540" alt="LightDecision-1" />
-</p>
+![LightDecision-1](assets/lightdecision-1.svg)
 
-<p align="center"><strong>An Open-Vocabulary Probabilistic Multimodal Decision Model</strong></p>
+**An Open-Vocabulary Probabilistic Multimodal Decision Model**
 
-<p align="center">
-  <a href="https://lightdecision.github.io/"><img src="assets/project-page.svg" alt="Project Page" /></a>
-  <a href="https://huggingface.co/shenjunhao/lightdecision-1-4b"><img src="assets/model-4b.svg" alt="Hugging Face · 4B Weights" /></a>
-  <a href="https://huggingface.co/shenjunhao/lightdecision-1-27b"><img src="assets/model-27b.svg" alt="Hugging Face · 27B Weights" /></a>
-  <a href="#run-a-decision"><img src="assets/quick-start.svg" alt="Quick Start" /></a>
-</p>
+[Project Page](https://lightdecision.github.io/) · [4B Weights](https://huggingface.co/shenjunhao/lightdecision-1-4b) · [27B Weights](https://huggingface.co/shenjunhao/lightdecision-1-27b) · [Quick Start](#run-a-decision)
 
-<p align="center">
-  <a href="#installation">Installation</a> ·
-  <a href="#request-format">Request format</a> ·
-  <a href="#image-inputs">Image inputs</a> ·
-  <a href="#runtime-controls">Runtime controls</a>
-</p>
+[Installation](#installation) · [Request format](#request-format) · [Image inputs](#image-inputs) · [Runtime controls](#runtime-controls)
 
 ---
 
 **LightDecision-1** predicts probabilities over candidate choices supplied with each request. It supports text and image inputs, action selection, binary judgments, and rubric scoring without generating an answer token by token. This repository provides the inference runtime, Python interface, and [HTTP service](#http-service) for both released models.
 
-## ✨ Highlights
+## Highlights
 
-<p align="center">
-  <img src="assets/highlights.svg" width="100%" alt="Open-vocabulary decisions accept candidate choices in natural language. Multimodal requests support text and images. The model returns a probability for each candidate and scores choices directly with zero generated tokens." />
-</p>
-
-## 🤗 Model Zoo
-
-<p align="center">
-  <a href="https://huggingface.co/shenjunhao/lightdecision-1-4b"><img src="assets/model-card-4b.svg" width="49%" alt="LightDecision-1-4B model weights, 9.2 GB, on Hugging Face" /></a>
-  <a href="https://huggingface.co/shenjunhao/lightdecision-1-27b"><img src="assets/model-card-27b.svg" width="49%" alt="LightDecision-1-27B model weights, 52.3 GB, on Hugging Face" /></a>
-</p>
+- **Open-vocabulary decisions.** Supply candidate choices in natural language with each request.
+- **Multimodal inputs.** Include text and images in the same request.
+- **Direct scoring.** The decision head computes scores over the candidate set.
+- **Structured outputs.** Choice questions return a probability distribution over the supplied candidates. See the [request format](#request-format) for binary judgments and rubric scores.
 
 ## Installation
 

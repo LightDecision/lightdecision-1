@@ -5,10 +5,10 @@
 <p align="center"><strong>An Open-Vocabulary Probabilistic Multimodal Decision Model</strong></p>
 
 <p align="center">
+  <a href="https://lightdecision.github.io/"><img src="assets/project-page.svg" alt="Project Page" /></a>
   <a href="https://huggingface.co/shenjunhao/lightdecision-1-4b"><img src="assets/model-4b.svg" alt="Hugging Face · 4B Weights" /></a>
   <a href="https://huggingface.co/shenjunhao/lightdecision-1-27b"><img src="assets/model-27b.svg" alt="Hugging Face · 27B Weights" /></a>
   <a href="#run-a-decision"><img src="assets/quick-start.svg" alt="Quick Start" /></a>
-  <a href="#http-service"><img src="assets/http-api.svg" alt="HTTP API" /></a>
 </p>
 
 <p align="center">

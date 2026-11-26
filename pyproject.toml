@@ -28,6 +28,7 @@ lightdecision = "lightdecision.cli:main"
 
 [project.urls]
 Repository = "https://github.com/LightDecision/lightdecision-1"
+Homepage = "https://lightdecision.github.io/"
 
 [tool.setuptools.packages.find]
 where = ["src"]

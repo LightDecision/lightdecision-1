@@ -1,13 +1,26 @@
-# LightDecision-1
+<p align="center">
+  <img src="assets/lightdecision-1.svg" width="540" alt="LightDecision-1" />
+</p>
 
-LightDecision-1 predicts probabilities over candidate choices supplied with each request. It supports text and image inputs, action selection, binary judgments, and rubric scoring without generating an answer token by token.
+<p align="center"><strong>Text &amp; Vision Decision Models</strong><br />Choose · Judge · Score</p>
 
-This repository provides the inference runtime, Python interface, and HTTP service for both released models.
+<p align="center">
+  <a href="https://huggingface.co/shenjunhao/lightdecision-1-4b"><img src="assets/model-4b.svg" alt="Hugging Face · 4B Weights" /></a>
+  <a href="https://huggingface.co/shenjunhao/lightdecision-1-27b"><img src="assets/model-27b.svg" alt="Hugging Face · 27B Weights" /></a>
+  <a href="#run-a-decision"><img src="assets/quick-start.svg" alt="Quick Start" /></a>
+  <a href="#http-service"><img src="assets/http-api.svg" alt="HTTP API" /></a>
+</p>
 
-| Model | Weights |
-| --- | --- |
-| LightDecision-1-4B | [Hugging Face](https://huggingface.co/shenjunhao/lightdecision-1-4b) |
-| LightDecision-1-27B | [Hugging Face](https://huggingface.co/shenjunhao/lightdecision-1-27b) |
+<p align="center">
+  <a href="#installation">Installation</a> ·
+  <a href="#request-format">Request format</a> ·
+  <a href="#image-inputs">Image inputs</a> ·
+  <a href="#runtime-controls">Runtime controls</a>
+</p>
+
+---
+
+**LightDecision-1** predicts probabilities over candidate choices supplied with each request. It supports text and image inputs, action selection, binary judgments, and rubric scoring without generating an answer token by token. This repository provides the inference runtime, Python interface, and HTTP service for both released models.
 
 ## Installation
 

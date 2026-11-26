@@ -51,9 +51,7 @@ class DecisionHead(nn.Module):
     def _initialize_head(self) -> None:
         for module in self.modules():
             if isinstance(module, nn.Linear):
-                # Both terminal bilinear maps stay nonzero: full-model
-                # gradients exist from the first update. This changes only
-                # initialization, not forward temperature or trained logits.
+                # Initialization is replaced by checkpoint weights during loading.
                 gain = self.score_init_gain if module in (
                     self.question_compatibility, self.option_compatibility
                 ) else 1.0

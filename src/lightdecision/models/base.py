@@ -22,7 +22,7 @@ class BackendCapabilities:
 class DecisionBackboneAdapter(nn.Module, ABC):
     @abstractmethod
     def forward_hidden(self, input_ids, attention_mask, position_ids=None) -> torch.Tensor:
-        """Differentiable hidden states [branches, tokens, hidden]."""
+        """Return hidden states [branches, tokens, hidden]."""
 
     @abstractmethod
     def get_hidden_size(self) -> int:

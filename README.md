@@ -20,7 +20,7 @@
 
 ---
 
-**LightDecision-1** predicts probabilities over candidate choices supplied with each request. It supports text and image inputs, action selection, binary judgments, and rubric scoring without generating an answer token by token. This repository provides the inference runtime, Python interface, and HTTP service for both released models.
+**LightDecision-1** predicts probabilities over candidate choices supplied with each request. It supports text and image inputs, action selection, binary judgments, and rubric scoring without generating an answer token by token. This repository provides the inference runtime, Python interface, and [HTTP service](#http-service) for both released models.
 
 ## Installation
 

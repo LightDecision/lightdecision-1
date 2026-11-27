@@ -34,7 +34,7 @@
   <img src="assets/figures/benchmarks.png" width="100%" alt="Multimodal decision benchmarks. LightDecision-1 4B and 27B are compared with Jev 1.14, Clef-Omni, Perplexity Decider-V1, Intern-Decision, and GPT-6 Luna Decisions on GameWorld, EmbodiedBench-ALFRED, EmbodiedBench-Habitat, and InfographicVQA." />
 </p>
 
-LightDecision-1 is evaluated on games, embodied tasks, and visual question answering, as well as text decisions and tool calling. Further results are on the [project page](https://lightdecision.github.io/).
+LightDecision-1 is evaluated on games, embodied tasks, and visual question answering, as well as text decisions and tool calling.
 
 ## 🧠 Architecture
 
@@ -62,8 +62,6 @@ Games and embodied tasks are driven by the same loop: observe, list candidate ac
     <td align="center" width="25%"><a href="assets/videos/habitat-find-red-disc.mp4"><img src="assets/videos/anim/habitat-find-red-disc.webp" width="100%" alt="Animated replay: Find a red disc by appearance" /></a><br /><b>Find a red disc by appearance</b><br /><sub>Habitat · Move a flat red round object to the right counter · 0:25</sub></td>
   </tr>
 </table>
-
-The replays are also available on the [project page](https://lightdecision.github.io/).
 
 ## 🤗 Model Zoo
 

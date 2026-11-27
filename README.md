@@ -8,6 +8,7 @@
   <a href="https://lightdecision.github.io/"><img src="assets/project-page.svg" alt="Project Page" /></a>
   <a href="https://huggingface.co/shenjunhao/lightdecision-1-4b"><img src="assets/model-4b.svg" alt="Hugging Face · 4B Weights" /></a>
   <a href="https://huggingface.co/shenjunhao/lightdecision-1-27b"><img src="assets/model-27b.svg" alt="Hugging Face · 27B Weights" /></a>
+  <a href="https://huggingface.co/datasets/shenjunhao/OpenJevData-140k"><img src="assets/training-data.svg" alt="Hugging Face · Training Data" /></a>
   <a href="#run-a-decision"><img src="assets/quick-start.svg" alt="Quick Start" /></a>
 </p>
 
@@ -238,6 +239,10 @@ pytest -q
 ```
 
 The tests exercise request parsing, image assets, probability outputs, checkpoint loading, prefix-cache isolation, and HTTP serving without downloading model weights.
+
+## Training Data
+
+The text-decision portion of the LightDecision-1 post-training data builds on [OpenJevData-140k](https://huggingface.co/datasets/shenjunhao/OpenJevData-140k), a public collection of 146,738 decision-making examples across 19 task categories with hard and soft labels.
 
 ## License
 

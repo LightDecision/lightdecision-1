@@ -28,6 +28,43 @@
   <img src="assets/highlights.svg" width="100%" alt="Open-vocabulary decisions accept candidate choices in natural language. Multimodal requests support text and images. The model returns a probability for each candidate and scores choices directly with zero generated tokens." />
 </p>
 
+## 📊 Results
+
+<p align="center">
+  <img src="assets/figures/benchmarks.png" width="100%" alt="Multimodal decision benchmarks. LightDecision-1 4B and 27B are compared with Jev 1.14, Clef-Omni, Perplexity Decider-V1, Intern-Decision, and GPT-6 Luna Decisions on GameWorld, EmbodiedBench-ALFRED, EmbodiedBench-Habitat, and InfographicVQA." />
+</p>
+
+LightDecision-1 is evaluated on games, embodied tasks, and visual question answering, as well as text decisions and tool calling. Further results are on the [project page](https://lightdecision.github.io/).
+
+## 🧠 Architecture
+
+<p align="center">
+  <img src="assets/figures/architecture.png" width="100%" alt="LightDecision-1 architecture. A Qwen3.5 multimodal backbone encodes the state and query once into a shared prefix cache. Each option is decoded as its own branch, two bidirectional set-attention blocks let the options interact, and a compatibility layer with softmax returns a probability for each option." />
+</p>
+
+The state, image, and query are encoded once and cached. Each candidate option continues from that shared prefix in parallel. A set-attention head then compares the options jointly and returns one probability per option.
+
+## 🎮 Games & Embodied Tasks
+
+Games and embodied tasks are driven by the same loop: observe, list candidate actions, and pick one. Each replay below plays automatically in a loop and shows the selected action at the top of the frame. Select a replay to open the full-quality video.
+
+<table>
+  <tr>
+    <td align="center" width="25%"><a href="assets/videos/game-2048.mp4"><img src="assets/videos/anim/game-2048.webp" width="100%" alt="Animated replay: 2048" /></a><br /><b>2048</b><br /><sub>Games · A number-merging puzzle · 0:58</sub></td>
+    <td align="center" width="25%"><a href="assets/videos/game-snake.mp4"><img src="assets/videos/anim/game-snake.webp" width="100%" alt="Animated replay: Snake" /></a><br /><b>Snake</b><br /><sub>Games · The classic Snake game · 0:20</sub></td>
+    <td align="center" width="25%"><a href="assets/videos/game-core-ball.mp4"><img src="assets/videos/anim/game-core-ball.webp" width="100%" alt="Animated replay: Core Ball" /></a><br /><b>Core Ball</b><br /><sub>Games · Timing with a rotating target · 0:19</sub></td>
+    <td align="center" width="25%"><a href="assets/videos/game-gentlemans-adventure.mp4"><img src="assets/videos/anim/game-gentlemans-adventure.webp" width="100%" alt="Animated replay: Another Gentleman's Adventure" /></a><br /><b>Another Gentleman's Adventure</b><br /><sub>Games · Side-scrolling platformer · 0:08</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="assets/videos/alfred-organize-two-books.mp4"><img src="assets/videos/anim/alfred-organize-two-books.webp" width="100%" alt="Animated replay: Organize two books" /></a><br /><b>Organize two books</b><br /><sub>ALFRED · Move both books from the bed to the desk · 0:22</sub></td>
+    <td align="center" width="25%"><a href="assets/videos/alfred-keys-and-lamp.mp4"><img src="assets/videos/anim/alfred-keys-and-lamp.webp" width="100%" alt="Animated replay: Pick up keys, switch on lamp" /></a><br /><b>Pick up keys, switch on lamp</b><br /><sub>ALFRED · Pick up the keys and turn on the floor lamp · 0:12</sub></td>
+    <td align="center" width="25%"><a href="assets/videos/habitat-find-cleaning-supplies.mp4"><img src="assets/videos/anim/habitat-find-cleaning-supplies.webp" width="100%" alt="Animated replay: Find cleaning supplies" /></a><br /><b>Find cleaning supplies</b><br /><sub>Habitat · Find an item to clean a spill, place it on the left counter · 0:09</sub></td>
+    <td align="center" width="25%"><a href="assets/videos/habitat-find-red-disc.mp4"><img src="assets/videos/anim/habitat-find-red-disc.webp" width="100%" alt="Animated replay: Find a red disc by appearance" /></a><br /><b>Find a red disc by appearance</b><br /><sub>Habitat · Move a flat red round object to the right counter · 0:25</sub></td>
+  </tr>
+</table>
+
+The replays are also available on the [project page](https://lightdecision.github.io/).
+
 ## 🤗 Model Zoo
 
 <p align="center">
